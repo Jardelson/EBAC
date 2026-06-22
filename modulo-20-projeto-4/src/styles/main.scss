@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Avenir;
+    src: url('../../fonts/Avenir-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../../fonts/Avenir-Bold.woff2');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #040714;
+    color: #fff;
+    font-family: Avenir, sans-serif;
+}
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url('../../images/hero_desktop.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        max-width: 640px;
+    }
+
+    &__branding {
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 38px;
+    }
+}
+
+.title--small {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: silver;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    margin-top: 2vw;
+    margin-bottom: 8px;
+    background-color: #6421ff;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}

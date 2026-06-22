@@ -1,0 +1,20 @@
+{
+  "name": "projeto-4",
+  "version": "1.0.0",
+  "description": "Projeto 4 EBAC - Landing page de filme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [],
+  "author": "Jardelson Freitas",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.101.0"
+  }
+}
