@@ -120,3 +120,35 @@ body {
         margin-top: 24px;
     }
 }
+.available-devices {
+    padding: 5.6vw;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        &__item {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            li {
+                list-style: none;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
