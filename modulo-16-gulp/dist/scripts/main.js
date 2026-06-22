@@ -1,1 +1,0 @@
-function mensagem(){document.querySelector("h1")&&console.log("Projeto com Gulp funcionando")}mensagem();
