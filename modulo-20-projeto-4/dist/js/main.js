@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var t=document.querySelectorAll(".faq__questions__item__question");for(let e=0;e<t.length;e++)t[e].addEventListener("click",n);function n(e){e.target.parentNode.classList.toggle("faq__questions__item--is-open")}});
