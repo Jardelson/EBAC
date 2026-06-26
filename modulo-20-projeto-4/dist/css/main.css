@@ -1,0 +1,240 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../../fonts/Avenir-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir;
+  src: url("../../fonts/Avenir-Bold.woff2");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #040714;
+  color: #fff;
+  font-family: Avenir, sans-serif;
+}
+
+.hero {
+  padding: 5.6vw;
+  min-height: 80vh;
+  background-image: url("../../images/hero_desktop.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.hero__content {
+  max-width: 640px;
+}
+.hero__branding {
+  max-width: 320px;
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.title--small {
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: silver;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 60px;
+  margin-top: 2vw;
+  margin-bottom: 8px;
+  background-color: #6421ff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.text--small {
+  font-size: 12px;
+  line-height: 22px;
+  color: silver;
+}
+
+.plans {
+  padding: 5.6vw;
+}
+.plans__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+  list-style: none;
+}
+.plans__list__item {
+  text-align: center;
+  padding: 60px 44px 44px;
+  max-width: 380px;
+  width: 100%;
+}
+.plans__list__item:nth-child(2) {
+  background-image: url("../../images/fundo_combo_plus.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.plans__list__item img {
+  height: 83px;
+}
+.plans__list__item strong {
+  display: block;
+  margin-top: 24px;
+}
+.plans__list__item .button {
+  margin-top: 24px;
+}
+.plans .text--small {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.available-devices {
+  padding: 5.6vw;
+}
+.available-devices h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.available-devices__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.available-devices__list__item {
+  text-align: center;
+}
+.available-devices__list__item img {
+  max-width: 100%;
+}
+.available-devices__list__item h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.available-devices__list__item li {
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.faq {
+  padding: 5.6vw;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.faq__questions {
+  list-style: none;
+}
+.faq__questions__item {
+  margin-bottom: 16px;
+}
+.faq__questions__item__question {
+  background-color: #13151d;
+  padding: 24px;
+  cursor: pointer;
+  position: relative;
+}
+.faq__questions__item__question::after {
+  content: "+";
+  position: absolute;
+  right: 24px;
+}
+.faq__questions__item__answer {
+  background-color: #13151d;
+  padding: 24px;
+  margin-top: 2px;
+  display: none;
+}
+.faq__questions__item--is-open .faq__questions__item__answer {
+  display: block;
+}
+.faq__questions__item--is-open s .faq__questions__item__question::after {
+  content: "-";
+}
+
+.footer {
+  padding: 26px 8px;
+  text-align: center;
+}
+.footer__logo {
+  width: 80px;
+  margin: 0 auto 10px;
+}
+.footer__links {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.footer__links__item {
+  display: inline-block;
+}
+.footer__links__item a {
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+}
+.footer__links__item a:hover {
+  color: #fff;
+}
+.footer p {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("../../images/hero_celular.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: calc(50vw + 25px);
+    min-height: auto;
+  }
+  .hero__content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__branding {
+    max-width: 180px;
+  }
+  .plans__list,
+  .available-devices__list {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .title--small {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .button {
+    max-width: 100%;
+  }
+}

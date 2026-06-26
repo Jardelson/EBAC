@@ -1,0 +1,28 @@
+$cor-principal: #182c61;
+$cor-secundaria: #44bd32;
+$fonte-principal: Arial, sans-serif;
+
+body {
+    margin: 0;
+    font-family: $fonte-principal;
+    background-color: #f5f6fa;
+    color: $cor-principal;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+h1 {
+    color: $cor-principal;
+}
+
+button {
+    background-color: $cor-secundaria;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
